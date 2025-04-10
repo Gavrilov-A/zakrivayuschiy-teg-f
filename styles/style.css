@@ -13,4 +13,45 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--main-font-size);
+  font-variation-settings: "wght" var(--main-font-weight);
+  background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-block-start: 102px;
+  display: grid;
+  justify-items: center;
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+  gap: 102px;
+  min-inline-size: 320px;
+}
+
+.card {
+  min-inline-size: 320px;
+}
+
+.header {
+  background-color: var(--bg-color-header, #fff);
+  border: 2px solid #000;
+  text-transform: uppercase;
+  padding: 128px 120px;
+}
+
+.logo {
+  font-family: var(--accent-font, sans-serif);
+  font-size: var(--font-size-logo);
+}
+
+.logo-text {
+  font-family: var(--accent-font, sans-serif);
+  font-size: var(--font-size-text);
 }

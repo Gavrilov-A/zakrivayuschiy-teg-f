@@ -2,4 +2,9 @@
 :root {
   --main-font: 'Inter Variable';
   --accent-font: 'PressStart2P';
+  --main-font-size: 18px;
+  --main-font-weight: 400;
+  --font-size-logo: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+  --font-size-text: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
+  --bg-color-header: #fff;
 }
