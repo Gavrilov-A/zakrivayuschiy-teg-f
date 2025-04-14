@@ -1,56 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-title" content="MyWebSite">
-    <title>Закрывающий тег</title>
-    <link rel="icon" type="image/png" href="./svg/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="./svg/favicon/favicon.svg">
-    <link rel="shortcut icon" href="./svg/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="./svg/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/globals.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/animations.css">
-  </head>
-  <body class="page">
-    <header class="header">
-      <h1 class="logo">
-        &lt;/html&gt;
-      </h1>
-      <p class="logo-text">
-        закрывающий тег
-      </p>
-    </header>
-    <main class="main">
-      <section class="card">
-        <h2 class="card-title">
-          Фритрек и нулевой спринт: Подготовка к работе
-        </h2>
-        <img src="./images/car.png" class="card-img" alt="Автомобиль">
-        <p>
-          Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+  <title>Закрывающий тег</title>
+  <link rel="icon" type="image/png" href="./svg/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./svg/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./svg/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./svg/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+</head>
+
+<body class="page">
+  <header class="header page__section page__header">
+    <a class="header__logo"> &lt;/html&gt; </a>
+    <h1 class="header__title">закрывающий тег</h1>
+  </header>
+  <main>
+    <article class="card page__section">
+      <h2 class="card__title-block">
+        Фритрек и нулевой спринт: Подготовка к работе
+      </h2>
+      <div class="card__image-block">
+        <span class="text-image">&lt;/html&gt; </span>
+        <img src="./images/car.jpg" class="card-image" loading="lazy" alt="Автомобиль" />
+      </div>
+      <div class="card__text-block">
+        <p class="card__description">
+          Это было самое начало пути. На этом этапе важно было проникнуться
+          основами и настроиться на учёбу. И, возможно, подумать, как новые
+          знания могут повлиять на ваше будущее.
         </p>
-        <p>
+        <p class="card__description">
           Место для ваших воспоминаний о начале обучения.
         </p>
-        <button type="button">
-          <span class="button__text">
-
-          </span>
+      </div>
+      <div class="card__button-block">
+        <button type="button" class="card__icon-button">
+          <svg class="like-icon is-liked" width="27" height="24" viewBox="0 0 27 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 0H3V3H6V0Z" fill="black" />
+            <path d="M9 0H6V3H9V0Z" fill="black" />
+            <path d="M3 3H0V6H3V3Z" fill="black" />
+            <path d="M3 6H0V9H3V6Z" fill="black" />
+            <path d="M3 9H0V12H3V9Z" fill="black" />
+            <path d="M12 0H9V3H12V0Z" fill="black" />
+            <path d="M6 12H3V15H6V12Z" fill="black" />
+            <path d="M9 15H6V18H9V15Z" fill="black" />
+            <path d="M12 18H9V21H12V18Z" fill="black" />
+            <path d="M21 0H24V3H21V0Z" fill="black" />
+            <path d="M18 0H21V3H18V0Z" fill="black" />
+            <path d="M24 3H27V6H24V3Z" fill="black" />
+            <path d="M24 6H27V9H24V6Z" fill="black" />
+            <path d="M24 9H27V12H24V9Z" fill="black" />
+            <path d="M15 0H18V3H15V0Z" fill="black" />
+            <path d="M21 12H24V15H21V12Z" fill="black" />
+            <path d="M18 15H21V18H18V15Z" fill="black" />
+            <path d="M15 18H18V21H15V18Z" fill="black" />
+            <path d="M15 3H12V6H15V3Z" fill="black" />
+            <path d="M15 21H12V24H15V21Z" fill="black" />
+          </svg>
         </button>
-      </section>
-    </main>
-    <footer>
-      <button class="">
-        <span class="button__text">
-
-        </span>
+        <button type="button" class="button card__like-button">
+          <span class="button__text"> Like </span>
+        </button>
+      </div>
+    </article>
+  </main>
+    <button type="button" 
+    class="button button__type-save" 
+    onclick="window['id-dialog-save'].showModal()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+        <use href="./svg/save.svg#save-icon"></use>
+      </svg>
+      <span class="button__text"> Сохранить на&nbsp память </span>
+    </button>
+    <dialog id="id-dialog-save" class="dialog-save">
+      <div class="dialog__text-block">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+          <use href="./svg/save.svg#save-icon"></use>
+        </svg>
+        <span class="dialog__text"> Вставьте<br> дискету, чтобы продолжить</span>
+      </div>
+      <button type="button" class="button dialog__button" onclick="window['id-dialog-save'].close()">
+        <span class="button__text"> ok </span>
       </button>
-    </footer>
-    <script src="./scripts/like.js"></script>
-  </body>
+    </dialog>
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>
