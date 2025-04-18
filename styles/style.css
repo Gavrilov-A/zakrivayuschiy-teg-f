@@ -273,7 +273,7 @@
 }
 
 .dialog__text-block svg {
-  block-size: 4.5em;
+  inline-size: 4.5em;
 }
 
 .dialog-save::backdrop {
